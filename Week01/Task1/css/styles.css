@@ -16,6 +16,9 @@ body {
 .topnav {
     overflow: hidden;
     background: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Style the topnav links */
@@ -53,6 +56,7 @@ body {
     display: table;
     clear: both;
 }
+
 /* Bố cục chồng lên nhau, 3 cột chồng lên nhau */
 @media screen and (max-width: 600px) {
     .column.side, .column.middle {
@@ -67,6 +71,7 @@ h2 {
 .answer {
     border: 1px dashed gray;
     font-family: Tahoma;
+    background-color: #f1f1f1;
 }
 /* Style the footer */
 .footer {

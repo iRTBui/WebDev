@@ -5,67 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>16521284 - Bùi Văn Trí - Task 1</title>
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
         <h1>16521284 - Bùi Văn Trí - Task 1</h1>
-    </div>
+    </div><!-- End. Header -->
 
-    <!-- topnav -->
     <div class="topnav">
-        <a href="#">Task</a>
-        <a href="#">CV</a>
-    </div>
+        <a href="#">Trang chủ</a>
+        <a href="#a">Câu a</a>
+        <a href="#b">Câu b</a>
+        <a href="#c">Câu c</a>
+        <a href="#d">Câu d</a>        
+    </div><!-- End. topnav -->
 
-    <!-- Main -->
     <div class="row">
         <div class="column side">
             <!-- nothing -->
-        </div>
+        </div><!-- End. column side #1 -->
+
         <div class="column middle">
-            <h2>Yêu cầu</h2>
-            <p>
-                Hãy tạo mới 1 trang HTML có tên theo dạng <b>MSSV-Task1.html</b> với yêu cầu:
-                <ul>
-                    <li>Tiêu đề trang: MSSV - Họ tên - Task 1</li>
-                    <li>
-                        Nội dung, định dạng: In <b><i>đậm và nghiêng</i></b> câu hỏi (font Tahoma, định dạng tiêu đề <b>h4</b>),
-                        câu trả lời sử dụng font Tahoma. Đánh thứ tự tự động dạng a. b. c. d. cho các câu hỏi.
-                    </li>
-                    <li>
-                        Có 1 hình nền bất kỳ, màu sắc chữ tự chọn sao cho vẫn thấy rõ nội dung trên trang.
-                    </li>
-                </ul>
-            </p>
-            <h2>Câu hỏi</h2>
-            <h4>
-                Trả lời các câu hỏi sau đây tại file HTML trên:
-                <ol type="a">
-                    <li>
-                        So sánh file HTML có định dạng .html và .htm. Nếu không có các thẻ &lt;html&gt;, &lt;head&gt; và &lt;body&gt; thì có ảnh hưởng gì trong file HTML không?
-                    </li>
-                    <li>
-                        Có những cách nào để hiển thị các thẻ HTML để hiển thị ra bên ngoài mà không bị HTML xử lý. <em>Ví dụ hiển thị các nội dung như &lt;/br&gt; &lt;div&gt;&lt;h1&gt;Hello HTML&lt;/h1&gt;&lt;/div&gt;</em>
-                    </li>
-                    <li>
-                        Làm thế nào để tạo vùng chọn để định dạng trong CSS cho một tag, một class, một ID?
-                    </li>
-                    <li>
-                        Tìm và cho ví dụ về các thẻ có các chức năng sau:
-                        <ul>
-                            <li>Gạch chân, kẻ đường ngang, chỉ số trên/dưới.</li>
-                            <li>Tạo bảng (có ghép dòng, ghép cột).</li>
-                            <li>4 hiệu ứng chữ chạy từ 4 hướng (trái, phải, trên, dưới).</li>
-                        </ul>
-                    </li>
-                </ol>
-            </h4>
             <h2>Trả lời</h2>
             <div class="answer">
-                    <h4>
-                        <em>So sánh file HTML có định dạng .html và .htm. Nếu không có các thẻ &lt;html&gt;, &lt;head&gt; và &lt;body&gt; thì có ảnh hưởng gì trong file HTML không?</em>
+                <ol type="a">
+                    <h4 id="a">
+                        <li><em>So sánh file HTML có định dạng .html và .htm. Nếu không có các thẻ &lt;html&gt;, &lt;head&gt; và &lt;body&gt; thì có ảnh hưởng gì trong file HTML không?</em></li>
                     </h4>
                     <p>
                         Cả hai định dạng .htm và .html đều giống hệt nhau. Việc sử dụng tùy thuộc vào mỗi cá nhân (.htm có 3 kí tự sẽ tiện cho bạn chẳng hạn).
@@ -76,142 +42,147 @@
                     <p>
                         Nếu không có các thẻ &lt;html&gt;, &lt;head&gt; và &lt;body&gt; thì không ảnh hưởng gì trong file HTML.
                     </p>
-            </div>
-            <div class="answer">
-                <h4>
-                    <em>Có những cách nào để hiển thị các thẻ HTML để hiển thị ra bên ngoài mà không bị HTML xử lý. Ví dụ hiển thị các nội dung như &lt;/br&gt; &lt;div&gt;&lt;h1&gt;Hello HTML&lt;/h1&gt;&lt;/div&gt;</em>
-                </h4>
-                <p>
-                    Cách 1: đổi dấu & lt thay thế < , & gt thay thế >  và & amp thay thế &.<br>
-                    Cách 2: sử dụng thẻ &ltxmp&gt...&lt/xmp&gt.<br>
-                    Ví dụ sử dụng thẻ &ltxmp&gt...&lt/xmp&gt:
-                    <xmp></br> <div><h1>Hello HTML</h1></div></xmp>
+                    <!-- End. answer #a -->
+                    <hr>
+                    <h4 id="b">
+                        <li><em>Có những cách nào để hiển thị các thẻ HTML để hiển thị ra bên ngoài mà không bị HTML xử lý. Ví dụ hiển thị các nội dung như &lt;/br&gt; &lt;div&gt;&lt;h1&gt;Hello HTML&lt;/h1&gt;&lt;/div&gt;</em></li>
+                    </h4>
+                    <p>
+                        Cách 1: đổi dấu & lt thay thế < , & gt thay thế >  và & amp thay thế &.<br>
+                        Cách 2: sử dụng thẻ &ltxmp&gt...&lt/xmp&gt.<br>
+                        Ví dụ sử dụng thẻ &ltxmp&gt...&lt/xmp&gt:
+                        <xmp></br> <div><h1>Hello HTML</h1></div></xmp>
+    
+                    </p>
+                    <!-- End. answer #b -->
+                    <hr>
+                    <h4 id="c">
+                        <li><em>Làm thế nào để tạo vùng chọn để định dạng trong CSS cho một tag, một class, một ID?</em></li>
+                    </h4>
+                    <p>
+                        <em>Tạo vùng chọn cho 1 tag:</em>
+                        Chọn toàn bộ phần tử dựa vào tên thẻ rồi áp dụng vào CSS. Ví dụ muốn thay đổi style cho toàn bộ thẻ h1 thì sẽ có đoạn CSS với thẻ h1:
+                        <code>h1 { color:red;}</code>
+                    </p>
+                    <p>
+                        <em>Tạo vùng chọn cho 1 class:</em>
+                        Một điểm khác biệt của class là một class có thể được sử dụng cho nhiều phần tử trên một trang tài liệu HTML, còn ID thì chỉ được sử dụng một lần duy nhất cho một phần tử.
+                        Class được khai báo trong một phần tử HTML bởi thuộc tính class như &lt;h1 class="tên-class"&gt;. Khi khai báo vùng chọn class trong CSS, thì tên class phải được đặt sau dấu chấm (.tên-class). Ví dụ:<br>
+                        <code>.class { color: red;}</code>
+                    </p>
+                    <p>
+                        <em>Tạo vùng chọn cho 1 ID:</em>
+                        Chọn một phần tử cụ thể dựa vào giá trị của thuộc tính ID trong thẻ HTML (vì trên một trang tài liệu HTML thì mỗi phần tử phải mang một ID riêng biệt không trùng nhau).
+                        Bất cứ thẻ nào cũng có thể sử dụng ID. Khi viết tên ID vào CSS thì nó phải có dấu thăng (#tên-id) đặt trước tên ID để phân biệt với các loại vùng chọn khác. Ví dụ:
+                        <code>#post-title { color: blue;}</code>
+                    </p>
+                    <p>
+                        Tham khảo: <a href="https://thachpham.com/web-development/html-css/vung-chon-css-co-ban.html">https://thachpham.com/web-development/html-css/vung-chon-css-co-ban.html</a>
+                    </p>
+                    <!-- End. answer #c -->
+                    <hr>
+                    <h4 id="d">
+                        <li><em>Tìm và cho ví dụ về các thẻ có các chức năng sau:</em></li>
+                    </h4>
+                    <ol type="1">
+                        <li><strong>Gạch chân, kẻ đường ngang, chỉ số trên/dưới.</strong></li>
+                        <div class="answer">
+                            Gạch chân: sử dụng thẻ <xmp><u>...</u></xmp>
+                            Ví dụ: <u>gạch chân</u><br>
+                            Kẻ đường ngang: sử dụng thẻ <xmp><hr></xmp>
+                            Ví dụ: <hr>
+                            Chỉ số trên dưới: sử dụng thẻ <xmp><sup>trên</sup> và <sub>dưới</sub></xmp>
+                            Ví dụ: chỉ số <sup>trên</sup> và chỉ số dưới <sub>dưới</sub>
+                        </div> <!-- End. answer #d.1 -->
+                        <li><strong>Tạo bảng (có ghép dòng, ghép cột).</strong></li>
+                        <div class="answer">
+                            Tạo bảng đơn giản: sử dụng các thẻ <xmp>table (bảng), tr(cột), td(hàng)</xmp>
+                            Ví dụ:
+                            <table border="1" cellspacing="0" cellpadding="5">
+                                <tr>
+                                    <td>Hàng 1 cột 1</td>
+                                    <td>Hàng 1 cột 2</td>
+                                    <td>Hàng 1 cột 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng 2 cột 1</td>
+                                    <td>Hàng 2 cột 2</td>
+                                    <td>Hàng 2 cột 3</td>
+                                </tr>
+                            </table>
+                            Tạo bảng với thuộc tính colspan & rowspan:
+                            <ul>
+                                <li>Colspan: Thuộc tính colspan dùng để nối hai hoặc nhiều ô với nhau tính từ ô đặt thẻ này đi tới phía trước.</li>
+                                <li>Rowspan: Thuộc tính rowspan dùng để nối hai hoặc nhiêu ô với nhau tính từ ô đặt thẻ đi xuống phía dưới.</li>
+                            </ul>
+                            Ví dụ:
+                            <table border="1" cellspacing="0" cellpadding="5">
+                                <tr>
+                                    <td colspan="2">Hàng 1 cột 1 và Hàng 1 cột 2</td>
+                                    <td>Hàng 1 cột 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng 2 cột 1</td>
+                                    <td>Hàng 2 cột 2</td>
+                                    <td>Hàng 2 cột 3</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <table border="1" cellspacing="0" cellpadding="5">
+                                <tr>
+                                    <td rowspan="2">Hàng 1 cột 1</td>
+                                    <td>Hàng 1 cột 3</td>
+                                    <td>Hàng 1 cột 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng 2 cột 2</td>
+                                    <td>Hàng 2 cột 3</td>
+                                </tr>
+                            </table>
+                        </div><!-- End. answer #d.2 -->
+                        <li><strong>4 hiệu ứng chữ chạy từ 4 hướng (trái, phải, trên, dưới).</strong></li>
+                        <div class="answer">
+                            Sử dụng thẻ <xmp><marquee></marquee></xmp>
+                            Mặc định:
+                            <marquee>phải qua trái</marquee>
+                            Thuộc tính direction="right":
+                            <marquee direction="right">trái qua phải</marquee>
+                            Thuộc tính direction="down":
+                            <marquee direction="down">trên xuống dưới</marquee>
+                            Thuộc tính direction="up":
+                            <marquee direction="up">dưới lên trên</marquee>
+                            Chữ chạy rồi biến mất:
+                            <marquee behavior="alternate"><marquee width="150">chữ chạy rồi biến mất</marquee></marquee>
+                            Chữ chạy, rê chuột dừng, đưa chuột ra chạy tiếp:
+                            <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2">Chữ chạy, rê chuột dừng, đưa chuột ra chạy tiếp</marquee>
+                            
+                        </div><!-- End. answer #d.3 -->
+                        <li><strong>Các link đã tham khảo:</strong></li>
+                        <div class="answer">
+                            <ul>
+                                <li>
+                                    <a href="https://vietjack.com/html/dinh_dang_trong_html.jsp" target="_blank" rel="noopener noreferrer">https://vietjack.com/html/dinh_dang_trong_html.jsp</a>
+                                </li>
+                                <li>
+                                    <a href="https://freetuts.net/cac-the-html-dinh-dang-table-121.html" target="_blank" rel="noopener noreferrer">https://freetuts.net/cac-the-html-dinh-dang-table-121.html</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.thietkemenu.net/chia-se/code-html-lam-anh-hoac-text-chay-tren-web-blog.html" target="_blank" rel="noopener noreferrer">http://www.thietkemenu.net/chia-se/code-html-lam-anh-hoac-text-chay-tren-web-blog.html</a>
+                                </li>
+                            </ul>
+                        </div><!-- End. answer #d.4 -->
+                    </ol><!-- End. answer #d -->
+                </ol><!-- End. ol.d-->
+            </div><!-- End. answer!-->
+        </div><!-- End. column middle -->
 
-                </p>
-            </div>
-            <div class="answer">
-                <h4>
-                    <em>Làm thế nào để tạo vùng chọn để định dạng trong CSS cho một tag, một class, một ID?</em>
-                </h4>
-                <p>
-                    <em>Tạo vùng chọn cho 1 tag:</em>
-                    Chọn toàn bộ phần tử dựa vào tên thẻ rồi áp dụng vào CSS. Ví dụ muốn thay đổi style cho toàn bộ thẻ h1 thì sẽ có đoạn CSS với thẻ h1:
-                    <code>h1 { color:red;}</code>
-                </p>
-                <p>
-                    <em>Tạo vùng chọn cho 1 class:</em>
-                    Một điểm khác biệt của class là một class có thể được sử dụng cho nhiều phần tử trên một trang tài liệu HTML, còn ID thì chỉ được sử dụng một lần duy nhất cho một phần tử.
-                    Class được khai báo trong một phần tử HTML bởi thuộc tính class như &lt;h1 class="tên-class"&gt;. Khi khai báo vùng chọn class trong CSS, thì tên class phải được đặt sau dấu chấm (.tên-class). Ví dụ:<br>
-                    <code>.class { color: red;}</code>
-                </p>
-                <p>
-                    <em>Tạo vùng chọn cho 1 ID:</em>
-                    Chọn một phần tử cụ thể dựa vào giá trị của thuộc tính ID trong thẻ HTML (vì trên một trang tài liệu HTML thì mỗi phần tử phải mang một ID riêng biệt không trùng nhau).
-                    Bất cứ thẻ nào cũng có thể sử dụng ID. Khi viết tên ID vào CSS thì nó phải có dấu thăng (#tên-id) đặt trước tên ID để phân biệt với các loại vùng chọn khác. Ví dụ:
-                    <code>#post-title { color: blue;}</code>
-                </p>
-                <p>
-                    Tham khảo: <a href="https://thachpham.com/web-development/html-css/vung-chon-css-co-ban.html">https://thachpham.com/web-development/html-css/vung-chon-css-co-ban.html</a>
-                </p>
-            </div>
-            <div class="answer">
-                <h4>
-                    <em>
-                        Tìm và cho ví dụ về các thẻ có các chức năng sau:
-                    </em>
-                </h4>
-                <ol type="a">
-                <li><strong>Gạch chân, kẻ đường ngang, chỉ số trên/dưới.</strong></li>
-                <div class="answer">
-                    Gạch chân: sử dụng thẻ <xmp><u>...</u></xmp>
-                    Ví dụ: <u>gạch chân</u><br>
-                    Kẻ đường ngang: sử dụng thẻ <xmp><hr></xmp>
-                    Ví dụ: <hr>
-                    Chỉ số trên dưới: sử dụng thẻ <xmp><sup>trên</sup> và <sub>dưới</sub></xmp>
-                    Ví dụ: chỉ số <sup>trên</sup> và chỉ số dưới <sub>dưới</sub>
-                </div>
-                <li><strong>Tạo bảng (có ghép dòng, ghép cột).</strong></li>
-                <div class="answer">
-                    Tạo bảng đơn giản: sử dụng các thẻ <xmp>table (bảng), tr(cột), td(hàng)</xmp>
-                    Ví dụ:
-                    <table border="1" cellspacing="0" cellpadding="5">
-                        <tr>
-                            <td>Hàng 1 cột 1</td>
-                            <td>Hàng 1 cột 2</td>
-                            <td>Hàng 1 cột 3</td>
-                        </tr>
-                        <tr>
-                            <td>Hàng 2 cột 1</td>
-                            <td>Hàng 2 cột 2</td>
-                            <td>Hàng 2 cột 3</td>
-                        </tr>
-                    </table>
-                    Tạo bảng với thuộc tính colspan & rowspan:
-                    <ul>
-                        <li>Colspan: Thuộc tính colspan dùng để nối hai hoặc nhiều ô với nhau tính từ ô đặt thẻ này đi tới phía trước.</li>
-                        <li>Rowspan: Thuộc tính rowspan dùng để nối hai hoặc nhiêu ô với nhau tính từ ô đặt thẻ đi xuống phía dưới.</li>
-                    </ul>
-                    Ví dụ:
-                    <table border="1" cellspacing="0" cellpadding="5">
-                        <tr>
-                            <td colspan="2">Hàng 1 cột 1 và Hàng 1 cột 2</td>
-                            <td>Hàng 1 cột 3</td>
-                        </tr>
-                        <tr>
-                            <td>Hàng 2 cột 1</td>
-                            <td>Hàng 2 cột 2</td>
-                            <td>Hàng 2 cột 3</td>
-                        </tr>
-                    </table>
-                    <br>
-                    <table border="1" cellspacing="0" cellpadding="5">
-                        <tr>
-                            <td rowspan="2">Hàng 1 cột 1</td>
-                            <td>Hàng 1 cột 3</td>
-                            <td>Hàng 1 cột 3</td>
-                        </tr>
-                        <tr>
-                            <td>Hàng 2 cột 2</td>
-                            <td>Hàng 2 cột 3</td>
-                        </tr>
-                    </table>
-                </div>
-                <li><strong>4 hiệu ứng chữ chạy từ 4 hướng (trái, phải, trên, dưới).</strong></li>
-                <div class="answer">
-                    Sử dụng thẻ <xmp><marquee></marquee></xmp>
-                    Mặc định:
-                    <marquee>phải qua trái</marquee>
-                    Thuộc tính direction="right":
-                    <marquee direction="right">trái qua phải</marquee>
-                    Thuộc tính direction="down":
-                    <marquee direction="down">trên xuống dưới</marquee>
-                    Thuộc tính direction="up":
-                    <marquee direction="up">dưới lên trên</marquee>
-                </div>
-                <li><strong>Các link đã tham khảo:</strong></li>
-                    <ul>
-                        <li>
-                            <a href="https://vietjack.com/html/dinh_dang_trong_html.jsp" target="_blank" rel="noopener noreferrer">https://vietjack.com/html/dinh_dang_trong_html.jsp</a>
-                        </li>
-                        <li>
-                            <a href="https://freetuts.net/cac-the-html-dinh-dang-table-121.html" target="_blank" rel="noopener noreferrer">https://freetuts.net/cac-the-html-dinh-dang-table-121.html</a>
-                        </li>
-                        <li>
-                            <a href="http://www.thietkemenu.net/chia-se/code-html-lam-anh-hoac-text-chay-tren-web-blog.html" target="_blank" rel="noopener noreferrer">http://www.thietkemenu.net/chia-se/code-html-lam-anh-hoac-text-chay-tren-web-blog.html</a>
-                        </li>
-                    </ul>
-                </ol>                
-            </div>
-        </div>
         <div class="column side">
                 <!-- nothing -->
-        </div>
-    </div>
+        </div><!-- End. column side #2 -->
+    </div><!-- End. main -->
 
-    <!-- Footer -->
     <div class="footer">
-        <p>Design by userTR. Nocopyright.</p>
-    </div>
-
+        <p>Design by userTR.</p>
+    </div><!-- End. footer -->
 </body>
 </html>
