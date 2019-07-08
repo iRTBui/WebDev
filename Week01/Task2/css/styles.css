@@ -73,7 +73,7 @@ p {
 	margin-bottom: 50px;
 }
 .module__title {
-	font-size: 22px;
+	font-size: 20px;
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;
@@ -112,9 +112,9 @@ p {
 	line-height: 42px;
 }
 .circle.circle--small {
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
 }
 .circle.circle--white {
 	background: #fff;
@@ -153,16 +153,4 @@ p {
 }
 .content .module__title {
 	margin-bottom: 0;
-}
-
-/* Language */
-.lang {
-	justify-content: space-between;
-}
-.lang__content {
-	text-align: center;
-}
-.lang__content h4 {
-	text-transform: uppercase;
-	margin-top: 15px;
 }
