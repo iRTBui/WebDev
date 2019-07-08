@@ -112,9 +112,9 @@ p {
 	line-height: 42px;
 }
 .circle.circle--small {
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
 }
 .circle.circle--white {
 	background: #fff;
