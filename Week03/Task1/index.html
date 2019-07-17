@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week03/Task01</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body id="myBody" style="height:1500px">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">16521284 - Bùi Văn Trí</a>
+      </div>
+    </div>
+  </nav><!-- End. nav header -->
+  <div class="container" style="margin-top:50px">
+    <div class="row">
+      <div class="container">
+        <h2>Bài tập tuần 3 - Sử dụng Accordion</h2>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    Những vị trí nào có thể đặt Javascript trong file HTML và đặt theo cú pháp nào? Nên đặt
+                    Javascript tại vị trí nào để có hiệu suất tốt nhất? Cho ví dụ minh họa.
+                </a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul>
+                  <li>
+                    Có thể đặt ở thẻ <code>&lt;head&gt;</code> và <code>&lt;body&gt;</code> trong file HTML.
+                    <ul>
+                      <li>
+                        Đặt ở thẻ <code>&lt;head&gt;</code>. Ví dụ:
+                          <xmp>
+                              <!DOCTYPE html>
+                              <html>
+                              <head>
+                              <script>
+                              function myFunction() {
+                                document.getElementById("demo").innerHTML = "Paragraph changed.";
+                              }
+                              </script>
+                              </head>
+                              <body>
+                              
+                              <h1>A Web Page</h1>
+                              <p id="demo">A Paragraph</p>
+                              <button type="button" onclick="myFunction()">Try it</button>
+                              
+                              </body>
+                              </html>
+                          </xmp>
+                      </li>
+                      <li>
+                        Đặt ở thẻ <code>&lt;body&gt;</code>. Ví dụ:
+                        <xmp>
+                            <!DOCTYPE html>
+                            <html>
+                            <body> 
+                            
+                            <h1>A Web Page</h1>
+                            <p id="demo">A Paragraph</p>
+                            <button type="button" onclick="myFunction()">Try it</button>
+                            
+                            <script>
+                            function myFunction() {
+                             document.getElementById("demo").innerHTML = "Paragraph changed.";
+                            }
+                            </script>
+                            
+                            </body>
+                            </html>
+                        </xmp>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Để có hiệu suất tốt nhất, nên đặt Javascript ở cuối thẻ <code>&lt;body&gt;</code>.
+                  </li>
+                </ul>
+              </div><!-- End. noiDungCau1 -->
+            </div>
+          </div><!-- End. cau1 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    Trong Javascript có những kiểu dữ liệu nào? Làm thế nào để tạo một biến để lưu trữ giá
+                    trị tương ứng với những kiểu dữ liệu đó?.
+                </a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ol>
+                  <li>
+                      Tiêu chuẩn ECMAScript mới nhất xác định bảy kiểu dữ liệu:
+                      <ul>
+                        <li>Sáu kiểu sơ khai:
+                          <ul>
+                            <li>Kiểu boolean</li>
+                            <li>Kiểu của null</li>
+                            <li>Kiểu của undefined</li>
+                            <li>Kiểu số</li>
+                            <li>Kiểu chuỗi</li>
+                            <li>Kiểu symbol (mới trong ECMAScript6)</li>
+                          </ul>
+                        </li>
+                        <li>Kiểu đối tượng</li>
+                      </ul>
+                  </li>
+                  <li>
+                    Tạo kiểu dữ liệu tương ứng:
+                    <pre>
+                      test = true; // test is a boolean
+                      test = null // test is null
+                      test; // test is undefined
+                      test = 16; //test is a number
+                      test = "Tester" //test is a string
+                      let testSymbol1 = Symbol(); // testSymbol1 is a symbol
+                      name:value // firstName:"Tri" is a object
+                    </pre>
+                  </li>
+                </ol>
+              </div><!-- End. noiDungCau2 -->
+            </div>
+          </div><!-- End. cau2 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    Làm thế nào để truy xuất (lấy giá trị) trong 1 thẻ HTML bất kỳ và gán vào 1 biến để trong
+                    Javascript theo ID, theo Class, theo Name, theo tên thẻ HTML và theo CSS Selector (ví dụ
+                    .class, #id)? Cho ví dụ minh họa.
+                </a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <!--  -->
+              </div>
+            </div><!-- End. noiDungCau3 -->
+          </div><!-- End. cau3 -->
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                      Xác định các lệnh Javascript tương ứng để thực hiện các yêu cầu sau:
+                      <ul>
+                        <li>Viết ghi chú trong Javascript (1 dòng, nhiều dòng).</li>
+                        <li>Hiển thị thời gian hiện tại (từ năm đến giây theo múi giờ GMT+7 - Việt Nam).</li>
+                        <li>Viết 1 hàm (function) để tính tổng giá trị của 2 số ngẫu nhiên từ 1 đến 100.</li>
+                        <li>Đổi màu nền hay hình nền của trang</li>
+                      </ul>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ol>
+                    <li>
+                      Viết ghi chú trong Javascript (1 dòng, nhiều dòng).
+                      <pre>
+                        // ghi chú 1 dòng
+                        /* ghi chú
+                        nhiều dòng*/
+                      </pre>
+                    </li>
+                    <li>
+                      Hiển thị thời gian hiện tại (từ năm đến giây theo múi giờ GMT+7 - Việt Nam).
+                      <xmp>
+                          <button onclick="myTime()">What time is it?</button>
+                          <p id="time"></p>
+                          <script>
+                          function myTime() {
+                            var d = new Date();
+                            var datestring = d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                            document.getElementById("time").innerHTML = datestring;
+                          }
+                          </script>
+                      </xmp>
+                      <button onclick="myTime()">What time is it?</button>
+                      <p id="time"></p>
+                      <script>
+                      function myTime() {
+                        var d = new Date();
+                        var datestring = d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                        document.getElementById("time").innerHTML = datestring;
+                      }
+                      </script>
+                    </li>
+                    <li>
+                      Viết 1 hàm (function) để tính tổng giá trị của 2 số ngẫu nhiên từ 1 đến 100.
+                      <xmp>
+                        <button onclick="tinhTong2SoNgauNhien()">Tính tổng 2 số ngẫu nhiên từ 1 đến 100</button>
+                        <p id="tinhTong2SoNgauNhien"></p>
+                        <script>
+                          function tinhTong2SoNgauNhien() {
+                            var x = Math.floor(Math.random() * 100) + 1;
+                            var y = Math.floor(Math.random() * 100) + 1;
+                            z=x+y;
+                            document.getElementById("tinhTong2SoNgauNhien").innerHTML = x + "+" + y + "=" + z;
+                        }
+                        </script>
+                      </xmp>
+                      <button onclick="tinhTong2SoNgauNhien()">Tính tổng 2 số ngẫu nhiên từ 1 đến 100</button>
+                      <p id="tinhTong2SoNgauNhien"></p>
+                      <script>
+                        function tinhTong2SoNgauNhien() {
+                          var x = Math.floor(Math.random() * 100) + 1;
+                          var y = Math.floor(Math.random() * 100) + 1;
+                          z=x+y;
+                          document.getElementById("tinhTong2SoNgauNhien").innerHTML = x + "+" + y + "=" + z;
+                        }
+                      </script>
+                    </li>
+                    <li>
+                      Đổi màu nền hay hình nền của trang.
+                      <pre>
+                        <xmp>
+                          <button type="button" onclick="myFunction()">Set the background image of body</button>
+                          <script>
+                          function myFunction() {
+                            document.getElementById("myBody").style.backgroundImage = "url('img/background-image.jpg')";
+                          }
+                          </script>
+                          </xmp>
+                          Kết quả:
+                          <button type="button" onclick="myFunction()">Set the background image of body</button>
+                          <script>
+                            function myFunction() {
+                              document.getElementById("myBody").style.backgroundImage = "url('img/background-image.jpg')";
+                            }
+                          </script>
+                      </pre>
+                    </li>
+                  </ol>
+                </div><!-- End. noiDungCau4 -->
+              </div>
+          </div><!-- End. cau4 -->
+        </div><!-- End. content -->
+      </div><!-- End. container main -->
+    </div><!-- End. row main -->
+  </div><!-- End. main -->
+</body>
+</html>
