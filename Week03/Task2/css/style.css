@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+#main {
+    display: flex;
+    flex: 1;
+}
+#main > article {
+    flex: 1;
+}
+#main > nav, 
+#main > aside {
+    flex: 0 0 20vw;
+}
+#main > nav {
+    order: -1;
+}
+header, footer {
+    height: 20vh;
+    font-size: 20px;
+    color: white;
+}
+header, footer, article, nav, aside {
+    padding: 1em;
+    text-align: center;
+}
+hr {
+    margin: auto;
+    width: 40%;
+}

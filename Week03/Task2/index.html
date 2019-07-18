@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/scripts.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body onload=time() style="background-image: url('img/08b89e75-c03a-41aa-9cb6-d3dd822cdfbe.jpg');">
+    <header>
+        <!-- Header -->
+    </header>
+    <div id="main">
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 id="clock" style="font-size: 110px;">00:00:00</h1>
+                    </div>
+                </div><!-- End. row#1 HienThiGio -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 id="message"></h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal">
+                            ...
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title">Nhập thông tin</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name" class="col-form-lable">Nhập tên của bạn:</label>
+                                            <input type="text" class="form-control" id="nameValue" placeholder="Tên của bạn" value=""/> <br/>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div><!-- End. Modal -->
+                    </div>
+                    <script>
+                    </script>
+                </div><!-- End. row#2 Chaoban, user -->
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 id="myBirthday"></h2>
+                    </div>
+                </div><!-- End. row#3 time -->
+            </div><!-- End. container -->
+        </article><!-- End. content -->
+        <nav>
+            <!-- Nav -->
+        </nav>
+        <aside>
+            <!-- Aside -->
+        </aside>
+    </div><!-- End. main -->
+    <footer>
+        <!-- Footer -->
+        <script>
+            quotes = new Array()
+            quotes[0] = "Hãy cứ khát khao, hãy cứ dại khờ. - Steve Jobs"
+            quotes[1] = "Không có gì là không thể, chỉ là một vài việc sẽ làm ta mất nhiều thời gian hơn."
+            quotes[2] = "Sự đơn điệu và cô độc của một cuộc sống yên lặng kích thích trí sáng tạo. - Albert Einstein"
+            quotes[3] = "Only two things make us happy: faith and love. Charles Nodier"
+            
+            randomquote = Math.random() * (quotes.length)
+            randomquote = Math.floor(randomquote)
+            document.write(quotes[randomquote])
+        </script>
+    </footer>
+</body>
+</html>
